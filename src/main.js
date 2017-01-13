@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import Resource from 'vue-resource'
 import routes from './routes'
 import store from './store'
+import AppView from './App.vue'
 
 Vue.use(VueRouter)
 Vue.use(Resource)
@@ -21,5 +22,6 @@ var router = new VueRouter({
 new Vue({
   el: '#root',
   router: router,
-  store: store
+  store: store,
+  render: h => h(AppView)
 })

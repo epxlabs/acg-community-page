@@ -1,8 +1,7 @@
 <template>
   <div class="col-sm-4 col-sm-offset-4 login-form">
-    <h2 v-if="!isNewPassword">Level-Up Your Community</h2>
-    <h2 v-else>Please enter new password</h2>
-    <p>Connecting non-profits with AWS certified professionals across the globe.</p>
+    <h1>Level-Up Your Community</h1>
+    <h3>Connecting non-profits with AWS certified professionals across the globe.</h3>
     <button>Mentor Sign In</button>
     <button>Non-Profit Sign In</button>
 
