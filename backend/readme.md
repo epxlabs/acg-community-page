@@ -5,6 +5,7 @@ The goal of the ACG mentor matcher is to connect non-profit/charities with tech 
 Mentor candidates will fill out a profile with their relevant experience and certifications and attempt to match with non-profit seeking those needs.
 
 #### Example business profile:
+```
 {
 "name": ["Women in Tech"],
 "project": ["Volunteer to Teach Women Cloud Engineers about X, Y, Z"],
@@ -13,8 +14,9 @@ Mentor candidates will fill out a profile with their relevant experience and cer
 "location": ["Las Vegas"],
 "cause type": ["non-profit"]
 }
-
+```
 #### Example Mentor Profile
+```
 {
 "name": ["EPX engineer #4"],
 "interests": ["Women in engineering", "teaching", "aws"],
@@ -22,7 +24,7 @@ Mentor candidates will fill out a profile with their relevant experience and cer
 "skills": ["Security", "Data management"],
 "location": ["Las Vegas"],
 }
-
+```
 #### Matching Algorithm
 Candidates and businesses will be matched on a simple python matching script which will perform a simple comparison of skills and certs along with a location check to see if the two are compatible.
 
