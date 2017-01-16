@@ -1,0 +1,18 @@
+service: acg-backend
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  region: us-west-2
+
+functions:
+  addMentor:
+    handler: addMentor.addMentor
+    role: arn:aws:iam::807976332278:role/lambda_dynamo_query
+    events:
+      - http:
+          path: mentors/create
+          method: put
+          cors: true
+    environment:
+      stageVar: ${opt:stage}

@@ -19,9 +19,37 @@ Mentor candidates will fill out a profile with their relevant experience and cer
 ```
 {
 "name": ["EPX engineer #4"],
-"interests": ["Women in engineering", "teaching", "aws"],
-"certs": ["DDB", "S3", "Lambda", "Cognito", "security"],
-"skills": ["Security", "Data management"],
+
+"interests": ["animal welfare",
+"arts and culture",
+"children",
+"civil rights",
+"economic empowerment",
+"education",
+"environment",
+"health",
+"politics",
+"poverty alleviation",
+"religion",
+"science and technology",
+"social services",
+"women"],
+
+"certs": ["associate_solutions_architect",
+"associate_sysops_administrator",
+"associate_developer",
+"specialty_security",
+"speciality_big_data",
+"specialty_advanced_networking",
+"professional_solutions_architect",
+"professional_devops_engineer"],
+
+"skills": ["database",
+"security",
+"operations",
+"mobile",
+"serverless",
+"development"],
 "location": ["Las Vegas"],
 }
 ```
@@ -32,3 +60,9 @@ Candidates and businesses will be matched on a simple python matching script whi
 Clone the repo and navigate to the python-sort-demo folder.
 In the terminal, type ```python sort.py```.
 The script will return a user key and a relevance value.
+
+###Add mentor to DDB
+In order to test the put user lambda, use:
+```
+curl -i -X PUT -H "Content-Type: application/json" -d "{\"email\":\"epx3@hotmail.com\", \"skills\":{\"database\":\"10\", \"security\":\"10\", \"operations\":\"10\", \"mobile\":\"10\", \"serverless\":\"10\", \"development\":\"10\"}, \"certs\": [\"associate_solutions_architect\", \"associate_sysops_administrator\", \"associate_developer\", \"specialty_security\", \"speciality_big_data\", \"specialty_advanced_networking\", \"professional_solutions_architect\", \"professional_devops_engineer\"], \"interests\":[\"animal welfare\", \"arts and culture\", \"children\", \"civil rights\", \"economic empowerment\", \"education\", \"environment\", \"health\", \"politics\", \"poverty alleviation\", \"religion\", \"science and technology\", \"social services\", \"women\"], \"name\": \"epxtest\"}" https://8709j4hak6.execute-api.us-west-2.amazonaws.com/test/mentors/create
+```
