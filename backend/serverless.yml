@@ -1,4 +1,4 @@
-service: acg-backend
+service: acg-volunteer-search
 
 provider:
   name: aws
@@ -7,7 +7,7 @@ provider:
 
 functions:
   addMentor:
-    handler: addMentor.addMentor
+    handler: volunteer.newVolunteer
     role: arn:aws:iam::807976332278:role/lambda_dynamo_query
     events:
       - http:
