@@ -66,3 +66,8 @@ In order to test the put user lambda, use:
 ```
 curl -i -X PUT -H "Content-Type: application/json" -d "{\"email\":\"epx3@hotmail.com\", \"skills\":{\"database\":\"10\", \"security\":\"10\", \"operations\":\"10\", \"mobile\":\"10\", \"serverless\":\"10\", \"development\":\"10\"}, \"certs\": [\"associate_solutions_architect\", \"associate_sysops_administrator\", \"associate_developer\", \"specialty_security\", \"speciality_big_data\", \"specialty_advanced_networking\", \"professional_solutions_architect\", \"professional_devops_engineer\"], \"causes\":[\"animal welfare\", \"arts and culture\", \"children\", \"civil rights\", \"economic empowerment\", \"education\", \"environment\", \"health\", \"politics\", \"poverty alleviation\", \"religion\", \"science and technology\", \"social services\", \"women\", \"mentorship\"], \"name\": \"epxtest\"}" https://m4au4jlfse.execute-api.us-west-2.amazonaws.com/test/mentors/create
 ```
+
+###Add organization to DDB:
+```
+curl -i -X PUT -H "Content-Type: application/json" -d "{\"email\":\"epx3@hotmail.com\", \"location\":{\"street\":\"1500 w 16th street\", \"city\":\"tempe\", \"state\":\"az\", \"zip\":\"85281\"}, \"contact\":{\"phone\":\"9085286254\", \"email\":\"chris@epxlabs.com\", \"website\":\"chris.com\", \"social_media\": {\"facebook\": \"none\"}}, \"name\": \"epxtest\", \"about_us\": \"not much\"}"  https://m4au4jlfse.execute-api.us-west-2.amazonaws.com/test/non-profit/create
+```

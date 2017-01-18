@@ -135,3 +135,35 @@ docClient.put(volunteerParams, dynamoCallback)
 
 
 }
+
+module.exports.getVolunteer = (event, context, callback) => {
+  const params = {
+    TableName: table_name,
+    KeyConditionExpression: "email = :email",
+    ExpressionAttributeValues: {
+      ":email": event.pathParameters.volunteer_email
+    }
+  };
+
+  docClient.query(params, function(err, data) {
+    var response = {};
+    if (err) {
+      response = {
+        statusCode: 500,
+        headers: {
+          "Access-Control-Allow-Origin": "*"
+        },
+        body: JSON.stringify(err, null, 2)
+      };
+    } else {
+      response = {
+        statusCode: 200,
+        headers: {
+          "Access-Control-Allow-Origin": "*"
+        },
+        body: JSON.stringify(data, null, 2)
+      };
+    };
+    callback(null, response);
+  });
+}

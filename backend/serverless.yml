@@ -16,3 +16,36 @@ functions:
           cors: true
     environment:
       stageVar: ${opt:stage}
+
+  getVolunteer:
+    handler: volunteer.getVolunteer
+    role: arn:aws:iam::807976332278:role/lambda_dynamo_query
+    events:
+      - http:
+          path: mentors/{volunteer_email}
+          method: get
+          cors: true
+    environment:
+      stageVar: ${opt:stage}
+
+  addOrganization:
+    handler: non-profit.newOrganization
+    role: arn:aws:iam::807976332278:role/lambda_dynamo_query
+    events:
+      - http:
+          path: non-profit/create
+          method: put
+          cors: true
+    environment:
+      stageVar: ${opt:stage}
+
+  getOrganization:
+    handler: non-profit.getOrganization
+    role: arn:aws:iam::807976332278:role/lambda_dynamo_query
+    events:
+      - http:
+          path: non-profit/{organization_name}
+          method: get
+          cors: true
+    environment:
+      stageVar: ${opt:stage}
