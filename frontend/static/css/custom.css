@@ -70,3 +70,15 @@
 .nonprofit-header {
   color: gray;
 }
+
+.navbar {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: white;
+}
+
+#acg-navbar-logo {
+  height: 30px;
+}

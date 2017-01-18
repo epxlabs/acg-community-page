@@ -1,10 +1,21 @@
 <template>
   <div>
   <div class="container" id="nonprofit-page">
+    <div class="row navbar">
+      <img class="logo" id="acg-navbar-logo" src="/static/images/acg-logo.png">
+      <span>Find a Mentor</span>
+      <span>View Organizations</span>
+      <span>Jobs</span>
+      <span>Events</span>
+      <span>Account</span>
+    </div>
+    <div class="row">
+    <img id="login-background" src="/static/images/login-background.jpg">
     <img id="aspca-logo" src="/static/images/aspca-logo.png">
     <br>
     <span id="aspca-text">ASPCA</span>
-  </div>
+    <div>
+
   <div class="row">
     <div class="col-md-6">
       <h4 class="nonprofit-header">ABOUT US</h4>
@@ -22,7 +33,9 @@
       <span>New York, NY 10128-6804</span>
       <h4 class="nonprofit-header">CONTACT</h4>
     </div>
+    </div>
   </div>
+
 </template>
 
 
