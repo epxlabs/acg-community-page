@@ -26,12 +26,13 @@
             <input class="login-input" type="email" placeholder="Email" v-model="user.email">
             <input class="login-input" type="password" placeholder="Password" v-model="user.password">
             <img src="/static/images/right-arrow.png">
+            <span id="password-reset">Forgot your password?</span>
           </div>
           <div v-else>
             <button @click="displayForm" class="btn btn-login">MENTOR SIGN IN</button>
             <button @click="displayForm" class="btn btn-login">NON-PROFIT SIGN IN</button>
-            <p>Not a member? Register now!</p>
           </div>
+          <p>Not a member? Register now!</p>
         </div>
       </section>
     </div>
