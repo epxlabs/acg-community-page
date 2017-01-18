@@ -64,3 +64,11 @@
 .enlarge {
   font-size: 325%;
 }
+
+.login-input {
+  padding: 15px;
+  margin-left: 50px;
+  margin-right: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
