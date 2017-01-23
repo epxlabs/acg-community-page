@@ -1,0 +1,53 @@
+
+.container {
+    display: table;
+    vertical-align: middle;
+}
+
+.btn-login {
+    background-color: purple;
+}
+
+#login-background {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-5000;
+}
+
+
+#your {
+  color: yellow;
+}
+
+.logo {
+  height: 50px;
+  width: inherit;
+  position: relative;
+  margin: auto;
+}
+#acg-logo {
+  float: left;
+  right: 200px;
+  top: 50px;
+}
+
+#aws-logo {
+  float: right;
+  top: 50px;
+}
+
+.content {
+  display: table-row;
+  height: 100%;
+}
+.body {
+  display: table-cell;
+}
+
+#login-body {
+  font-size: 200%;
+  color: white;
+}
