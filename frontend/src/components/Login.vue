@@ -1,7 +1,6 @@
 <template>
-  <div>
+  <div class="page">
     <div class="container" id="login-page">
-      <img id="login-background" src="/static/images/login-background.jpg">
       <div class="row">
         <header class="header">
           <div class=".col-md-6">
@@ -23,16 +22,25 @@
           </div>
           <br>
           <div v-if="buttonClicked">
+            <div class="row">
             <input class="login-input" type="email" placeholder="Email" v-model="user.email">
-            <input class="login-input" type="password" placeholder="Password" v-model="user.password">
+            <input class="login-input" id="password-input" type="password" placeholder="Password" v-model="user.password">
             <img src="/static/images/right-arrow.png">
-            <span id="password-reset">Forgot your password?</span>
+            </div>
+            <div class="row">
+              <span id="password-reset">Forgot your password?</span>
+            </div>
           </div>
           <div v-else>
-            <button @click="displayForm" class="btn btn-login">MENTOR SIGN IN</button>
+            <div class="row">
+            <button @click="displayForm" class="btn btn-login">VOLUNTEER SIGN IN</button>
             <button @click="displayForm" class="btn btn-login">NON-PROFIT SIGN IN</button>
+            </div>
           </div>
+          <br>
+          <div class="row">
           <p>Not a member? Register now!</p>
+          <div class="row">
         </div>
       </section>
     </div>
