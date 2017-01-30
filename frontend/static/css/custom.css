@@ -92,3 +92,36 @@
     position: relative;
     left: 22px;
 }
+
+#nonprofit-page {
+  margin: auto;
+  text-align: center;
+}
+
+#aspca-logo {
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+#aspca-text {
+  color: orange;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nonprofit-header {
+  color: gray;
+}
+
+.navbar {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: white;
+}
+
+#acg-navbar-logo {
+  height: 30px;
+  float: left;
+}
