@@ -11,7 +11,7 @@ const routes = [{
     redirect: '/login'
   }]
 }, {
-  path: '/nonprofit',
+  path: '/nonprofit/:id',
   component: NonProfit
 }]
 
