@@ -15,7 +15,7 @@
     <section class="content">
       <div class="body" id="login-body">
         <div class="row">
-        <h1>Level-Up <span id="your">Your</span> Community</h1>
+        <h1>Level-Up <span id="your">Third Test</span> Community</h1>
         </div>
         <div class="row">
         <h4>Connecting non-profits with AWS certified professionals across the globe.</h4>
